@@ -7,5 +7,5 @@ class PurchaseOrder(models.Model):
     _inherit = "purchase.order"
 
     channel_id = fields.Many2one(
-        "purchase.order.channel", string="Channel"
+        "purchase.order.channel", string="Channel", ondelete="restrict"
     ) 

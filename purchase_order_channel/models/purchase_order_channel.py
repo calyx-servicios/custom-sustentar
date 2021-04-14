@@ -10,19 +10,7 @@ class PurchaseOrderChannel(models.Model):
     _rec_name = "name"
     _order = "sequence"
 
-    name = fields.Char(string="Channel")
+    name = fields.Char(string="Channel", ondelete="restrict")
     active = fields.Boolean(default=True)
     sequence = fields.Integer(default=10)
 
-    def unlink(self):
-        purchase_order = self.env["purchase.order"]
-        rule_ranges = purchase_order.search([("name", "=", self.id)])
-        if rule_ranges:
-            raise Warning(
-                _(
-                    "You are trying to delete a record "
-                    "that is still referenced in one o more purchase, "
-                    "try to archive it."
-                )
-            )
-        return super(PurchaseOrderChannel, self).unlink()

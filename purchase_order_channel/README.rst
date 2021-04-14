@@ -1,5 +1,5 @@
 ===================
-Contract Sale Order
+Purchase order Channel
 ===================
 
 .. !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -35,14 +35,15 @@ This module adds a "Canal" field in the Purchase Request, to improve the query t
 Install
 =======
 
-Search Contract Sale Order in apps and install the module.
+create "channel" field in purchase order.
 
 Usage
 =====
 
-1. Go to contract.
+1. Go to purchase request.
+2. Go to deliveries and invoices.
 2. Complete the form.
-3. Push "create sale" button.
+3. select "channel" field.
 
 Known issues / Roadmap
 ======================
@@ -70,7 +71,6 @@ Contributors
   * Jhone Mendez
   * Federico Gregori
   * Cristian Paradiso
-  * Milton Guzman
 
 Maintainers
 ~~~~~~~~~~~
@@ -84,4 +84,4 @@ This module is maintained by the Calyx Servicios S.A.
 CALYX SERVICIOS S.A. It is part of the PGK Consultores economic group, member of an important global network, a world organization positioned among the 20 largest consultant-studios in the world.
 The PGK Consultores group is one of the 20 largest consultant-studios in Argentina with nearly 200 professionals.
 
-This module is part of the `Custom_iting <https://github.com/calyx-servicios/custom-iting>`_ project on Github.
+This module is part of the `Custom_sustentar <https://github.com/calyx-servicios/custom-sustentar>`_ project on Github.
