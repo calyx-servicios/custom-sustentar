@@ -16,5 +16,6 @@
     "depends": ["purchase"],
     "data": ["views/purchase_order_view.xml", 
              "views/purchase_order_channel_view.xml",
+             "views/account_invoice_view.xml",
              "security/ir.model.access.csv"],
 }
